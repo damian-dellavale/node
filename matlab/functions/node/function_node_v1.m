@@ -487,8 +487,8 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
      for cc=1:+1:args.Nchannels %Loop over the channels.
          for bb1=1:+1:NfreqBands %First loop over the frequency bands.
              
-             %Initialize the time position of the events with the values of 
-             %the time position of the anomalies in the current frequency band (bb1).
+             %Initialize the time position of the events with the time position
+             %of the anomalies in the current frequency band (bb1).
              eventPos{cc,bb1,th}   = anomalyPos{cc,bb1,th};
              %
              %Initialize the variables.
@@ -499,13 +499,13 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
                  %Initialize the variables.
                  label = zeros(1,NfreqBands);
                  %
-                 %Initialize the label of the event with the value of the 
-                 %label of the anomaly (aa) in the frequency band (bb1).
-                 label(bb1) = 1; %Logical label for the anomaly (aa) in the frequency band (bb1).
+                 %Initialize the label of the event with the label of the 
+                 %anomaly aa in the frequency band bb1.
+                 label(bb1) = 1; %Logical label for the anomaly aa in the frequency band bb1.
                  for bb2=bb1+1:+1:NfreqBands %Second loop over the frequency bands.
 
-                     %Determine if any event in the frequency band bb2 is within
-                     %the time window of the current event pertaining to the frequency band bb1.
+                     %Determine if any anomaly in the frequency band bb2 is within
+                     %the time window of the current anomaly pertaining to the frequency band bb1.
                      indStartAnomaly = anomalyPos{cc,bb2,th} > (anomalyPos{cc,bb1,th}(aa)-(args.windowLength/2));
                      indEndAnomaly = anomalyPos{cc,bb2,th} < (anomalyPos{cc,bb1,th}(aa)+(args.windowLength/2));
                      %
@@ -518,7 +518,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
                          eventPos{cc,bb1,th}(aa) = mean([anomalyPos{cc,bb1,th}(aa), anomalyPos{cc,bb2,th}(indAnomaly)]);
                          %
                          %Update the label of the event (i.e. merged anomalies).
-                         label(bb2) = 1; %Logical label corresponding the co-ocurrent anomaly in the frequency band (bb2).
+                         label(bb2) = 1; %Logical label corresponding the co-ocurrent anomaly in the frequency band bb2.
                          %
                          %Clear the anomaly(ies) of the next frequency band co-occurring 
                          %with the anomaly of the current frequency band, since they
