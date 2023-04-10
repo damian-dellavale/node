@@ -1,0 +1,76 @@
+[Warning: Name is nonexistent or not a directory:
+D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\external\signal] 
+[Warning: Name is nonexistent or not a directory:
+D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\external\stats] 
+[Warning: Name is nonexistent or not a directory:
+D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\external\images] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 2 seconds
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 1 seconds
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 1 seconds
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 1 seconds
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 1 seconds
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 1 seconds
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+applying the montage to the elec structure
+[Warning: copying input chantype to montage] 
+[Warning: copying input chanunit to montage] 
+the call to "ft_preprocessing" took 1 seconds
+Processing channel RHH1-RHH2; 1 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.
+Processing channel RHH2-RHH3; 2 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.
+Processing channel RHH3-RHH4; 3 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.
+Processing channel RHH4-RHH5; 4 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.
+Processing channel RHH5-RHH6; 5 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.
+Processing channel RHH6-RHH7; 6 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.
+Processing channel RHH7-RHH8; 7 out of 7.
+Detection on chunk 1/1
+Processing local FDR 1 out of 2.
+Processing local FDR 2 out of 2.

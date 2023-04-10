@@ -1,0 +1,27 @@
+
+#Ignore these folders.
+#data/
+_backup/
+
+#Ignore these particular files.
+#todo.txt
+
+#Ignore these image formats.
+#*.jpeg
+#*.jpg
+#*.png
+#*.svg
+#*.eps
+
+#Ignore these Matlab files.
+#*.fig
+#*.log
+*.mat
+*.asv
+
+#Ignore these file formats.
+#*.lnk
+#*.odt
+*.pdf
+*.xlsx
+
