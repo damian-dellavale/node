@@ -498,7 +498,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
              for aa=1:+1:length(anomalyPos{cc,bb1,th}) %Loop over the anomalies.
                  
                  %---
-                 %Initialize the variables.
+                 %Clear the label from the previous anomaly (aa-1).
                  label = zeros(1,NfreqBands);
                  %
                  %Initialize the label of the event with the label of the 
