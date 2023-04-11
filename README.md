@@ -4,7 +4,7 @@ Nested Outlier Detection (NODE) algorithm.
 
 # Description
 
-The NODE algorithm define the events by detecting anomalies (i.e. outliers) of amplitude across the frequency bands of interest.
+The NODE algorithm define transient events in time series by detecting anomalies (i.e. outliers) of amplitude across the frequency bands of interest.
 For this, the NODE algorithm uses the Local False Discovery Rate (LFDR) method to identify the transient excursions of amplitudes corresponding to outliers,
 while controlling for the proportion of false positives.
 
@@ -23,7 +23,6 @@ we elaborated on top of these scripts to study the fast-ultradian dynamics of th
 
 - Paper describing the NODE algorithm:\
 Dellavale, D., Bonini, F., Pizzo, F., et al. Spontaneous fast-ultradian dynamics of polymorphic interictal events in drug-resistant focal epilepsy, Epilepsia (submitted 2023).\
-DOI: XXXX\
 Preprint freely available at DOI: [10.1101/2023.04.05.23288085](https://doi.org/10.1101/2023.04.05.23288085)
 
 - Paper describing the example iEEG dataset:\

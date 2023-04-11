@@ -33,7 +33,6 @@
 
 %Dellavale, D., Bonini, F., Pizzo, F., et al. Spontaneous fast-ultradian dynamics
 %of polymorphic interictal events in drug-resistant focal epilepsy, Epilepsia (submitted 2023).
-%DOI: XXXX
 %Preprint freely available at DOI: https://doi.org/10.1101/2023.04.05.23288085
 
 %Paper describing the iEEG dataset:
