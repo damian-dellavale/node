@@ -332,6 +332,8 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
         %
         bpfSignal = chunk_bpf(:,:,bb);
         %
+        %Reset the variables from the previous chunk.        
+        %
         %ampThreshold_high_ = NaN(args.Nchannels,Nthresholds);
         %ampThreshold_low_ = NaN(args.Nchannels,Nthresholds);        
         ampThreshold_ = NaN(args.Nchannels,Nthresholds);
@@ -411,9 +413,13 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
             %---
             
             %---
-            %Compute the anomaly time position in seconds.
-            anomalyPos_{cc,th} =...
-            (chunkStart_samples(chk) + anomaliesInd - 1) / args.fs; %[sec]
+            if isempty(anomaliesInd)
+                anomalyPos_{cc,th} = [];
+            else
+                %Compute the anomaly time position in seconds.
+                anomalyPos_{cc,th} =...
+                (chunkStart_samples(chk) + anomaliesInd - 1) / args.fs; %[sec]
+            end %if isempty(anomaliesInd)
             %---
             
             end %Loop over the LFDR threshold values.    
@@ -488,7 +494,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
      %If further co-occurrence constraints are required, co-occurent events should be identified 
      %and merged in a single event outside this function.
 
-     %Initialize the variables.
+     %Reset the variables from the previous chunk.
      eventPos   = {};
      eventLabel = {};
      %

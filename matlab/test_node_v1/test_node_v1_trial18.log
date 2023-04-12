@@ -1,13 +1,31 @@
 [Warning: Name is nonexistent or not a directory:
 D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\external\signal] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_defaults', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_defaults.m', 201)" style="font-weight:bold">ft_defaults</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_defaults.m',201,0)">line 201</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m', 185)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m',185,0)">line 185</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_node_v1', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\test_node_v1.m', 427)" style="font-weight:bold">test_node_v1</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\test_node_v1.m',427,0)">line 427</a>)] 
 [Warning: Name is nonexistent or not a directory:
 D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\external\stats] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_defaults', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_defaults.m', 208)" style="font-weight:bold">ft_defaults</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_defaults.m',208,0)">line 208</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m', 185)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m',185,0)">line 185</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_node_v1', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\test_node_v1.m', 427)" style="font-weight:bold">test_node_v1</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\test_node_v1.m',427,0)">line 427</a>)] 
 [Warning: Name is nonexistent or not a directory:
 D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\external\images] 
+[> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\addpath.m', 86)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\addpath.m',86,0)">line 86</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_defaults', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_defaults.m', 215)" style="font-weight:bold">ft_defaults</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_defaults.m',215,0)">line 215</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m', 185)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m',185,0)">line 185</a>)
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('test_node_v1', 'D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\test_node_v1.m', 427)" style="font-weight:bold">test_node_v1</a> (<a href="matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\test_node_v1.m',427,0)">line 427</a>)] 
 the call to "ft_selectdata" took 0 seconds
 preprocessing
 applying the montage to the elec structure
 [Warning: copying input chantype to montage] 
+ In <a href = "matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\forward\ft_apply_montage.m',114,1)">ft_apply_montage at line 114</a>
+ In <a href = "matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m',704,1)">ft_preprocessing at line 704</a>
+
 [Warning: copying input chanunit to montage] 
 the call to "ft_preprocessing" took 3 seconds
 the call to "ft_selectdata" took 0 seconds
@@ -47,8 +65,6 @@ applying the montage to the elec structure
 [Warning: copying input chanunit to montage] 
 the call to "ft_preprocessing" took 1 seconds
 Processing channel RHH1-RHH2; 1 out of 7.
-Starting parallel pool (parpool) using the 'local' profile ...
-Connected to the parallel pool (number of workers: 24).
 Detection on chunk 1/1
 Processing local FDR 1 out of 2.
 Processing local FDR 2 out of 2.
