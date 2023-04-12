@@ -472,6 +472,7 @@ DATASET.signal = function_zscore_v1(DATASET.signal.').';
 
 %Initialize the markers and the kernels.
 NODE.results.markers = [];
+%
 for chgroup=1:+1:size(DATASET.signal,DATASET.dimChannels) %Loop over the groups of channels.
     
 %% Update the output filename.

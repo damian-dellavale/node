@@ -27,7 +27,7 @@ applying the montage to the elec structure
  In <a href = "matlab: opentoline('D:\dellavale\projects\neuro\dynamap\seegBidsRetro\node\matlab\functions\fieldtrip\ft_preprocessing.m',704,1)">ft_preprocessing at line 704</a>
 
 [Warning: copying input chanunit to montage] 
-the call to "ft_preprocessing" took 3 seconds
+the call to "ft_preprocessing" took 2 seconds
 the call to "ft_selectdata" took 0 seconds
 preprocessing
 applying the montage to the elec structure
