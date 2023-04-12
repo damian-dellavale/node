@@ -492,8 +492,9 @@ NODE.channelLabel = DATASET.channelLabel(chgroup);
 
 %% Detection of the events using the NODE algorithm.
 
-[Dout, Sout] = function_node_v1(DATASET.signal_chgroup, NODE);
-%[Dout, Sout, BPFout] = function_node_v1(DATASET.signal_chgroup, NODE);
+%[Dout] = function_node_v1(DATASET.signal_chgroup, NODE);
+%[Dout, Sout] = function_node_v1(DATASET.signal_chgroup, NODE);
+[Dout, Sout, BPFout] = function_node_v1(DATASET.signal_chgroup, NODE);
 
 %---
 %How to read the output structures:
