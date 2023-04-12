@@ -332,7 +332,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
         %
         bpfSignal = chunk_bpf(:,:,bb);
         %
-        %Reset the variables from the previous chunk.        
+        %Reset the variables from the previous frequency band (bb-1).
         %
         %ampThreshold_high_ = NaN(args.Nchannels,Nthresholds);
         %ampThreshold_low_ = NaN(args.Nchannels,Nthresholds);        
