@@ -9,7 +9,7 @@ preprocessing
 applying the montage to the elec structure
 [Warning: copying input chantype to montage] 
 [Warning: copying input chanunit to montage] 
-the call to "ft_preprocessing" took 2 seconds
+the call to "ft_preprocessing" took 3 seconds
 the call to "ft_selectdata" took 0 seconds
 preprocessing
 applying the montage to the elec structure

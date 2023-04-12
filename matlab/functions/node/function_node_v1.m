@@ -248,9 +248,6 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
     %Display the number of the chunk being processed.
     disp(['Detection on chunk ' num2str(chk) '/' num2str(length(chunkStart_samples))]);
     
-    %Reset the variables from the previous chunk.
-    anomalyPos   = {};
-
     %Compute the current chunk for all the channels.
     chunk = args.signal(:, chunkStart_samples(chk)+(0:+1:chunkLength_samples(chk)-1));
 
@@ -279,6 +276,12 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
     args.indSettling = args.indFraction + 1;                
     %---
     
+    %Reset the variables from the previous chunk and initialize the dimensions.
+    %NOTE: This initialization ensures the anomalyPos variable has the proper
+    %dimensions even in the case some frequency bands were not processed 
+    %because they fail to satisfy the Nyquist criterion.
+    anomalyPos(1:args.Nchannels,1:NfreqBands,1:Nthresholds) = {[]};
+    %
     %Memory pre-allocation for speed up the loop.
     chunk_bpf = NaN(args.Nchannels,size(chunk,dimSamples),NfreqBands);
     %ampThreshold_high = NaN(args.Nchannels,NfreqBands,Nthresholds);
@@ -286,7 +289,22 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
     ampThreshold = NaN(args.Nchannels,NfreqBands,Nthresholds);
     %
     parfor bb=1:NfreqBands %Loop over the frequency bands (parfor).
-        
+
+        %---
+        %Extract the parameters for the LFDR configuration (compatible with the parfor).
+        %NOTE: The entire structure 'args' is broadcasted to all the
+        %workers. Be aware of the possible communication overhead.
+        LFDR = args.LFDR;
+        %---
+
+        %---
+        %Check if the sampling rate satisfy the Nyquist criterion.
+        if args.fs <= (2*args.BPFcfg{bb}.f2)
+            %Continue with the next frequency band.
+            continue,
+        end %if args.fs <= (2*args.BPFcfg{bb}.f2)
+        %---
+
         %---
         %Band-pass Filtering.
         FDFout = function_FDF_v1(chunk_r.', args.BPFcfg{bb});
@@ -310,7 +328,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
 %         figure, plot(squeeze(chunk_bpf(cc,:,bb)),'-b')
 %         %---             
         
-        %Define an auxiliary variable for compatibility with the parfor.
+        %Define an auxiliary variables for compatibility with the parfor.
         %
         bpfSignal = chunk_bpf(:,:,bb);
         %
@@ -320,7 +338,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
         %
         anomalyPos_   = {};
         %
-        for cc=1:args.Nchannels %Loop over the channels.
+        for cc=1:+1:args.Nchannels %Loop over the channels.
         %Refs:
         %https://fr.mathworks.com/help/parallel-computing/parfor.html 
         %https://fr.mathworks.com/help/parallel-computing/nested-parfor-loops-and-for-loops.html
@@ -329,11 +347,6 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
         %If you convert the inner loop instead, then each iteration of the outer loop initiates a separate parfor-loop.
         %That is, the inner loop conversion creates 100 parfor-loops. Each of the multiple parfor executions incurs overhead.
         %If you want to reduce parallel overhead, you should run the outer loop in parallel instead, because overhead only occurs once.
-
-            %Extract the parameters for the LFDR configuration (compatible with the parfor).
-            %NOTE: The entire structure 'args' is broadcasted to all the
-            %workers. Be aware of the possible communication overhead.
-            LFDR = args.LFDR;
                     
             %Compute the threshold via LFDR.
             for th=1:+1:Nthresholds %Loop over the LFDR threshold values.
@@ -405,18 +418,18 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
             
             end %Loop over the LFDR threshold values.    
             
-            %---
-            %Update the variables in a way compatible with the parfor.
-            %
-            %ampThreshold_high(cc,bb,th) = ampThreshold_high_;
-            %ampThreshold_low(cc,bb,th) = ampThreshold_low_;            
-            ampThreshold(:,bb,:) = ampThreshold_; 
-            %
-            anomalyPos(:,bb,:) = anomalyPos_;
-            %---
-            
         end %Loop over the channels.
-            
+
+        %---
+        %Update the variables in a way compatible with the parfor.
+        %
+        %ampThreshold_high(:,bb,:) = ampThreshold_high_;
+        %ampThreshold_low(:,bb,:) = ampThreshold_low_;            
+        ampThreshold(:,bb,:) = ampThreshold_; 
+        %
+        anomalyPos(:,bb,:) = anomalyPos_;
+        %---
+
 %         %DEBUGGING: Show the resulting signals (band-pass filtered and denoised),
 %         %the thresholds and the markers for the anomalies.
 %         %

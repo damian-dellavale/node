@@ -117,7 +117,7 @@ try %MATLAB 2018 and later:
     %https://www.mathworks.com/matlabcentral/answers/320604-how-do-i-prevent-the-legend-from-auto-updating
     %https://www.mathworks.com/help/matlab/creating_plots/default-property-values.html
 catch err
-    disp('The property ''defaultLegendAutoUpdate'' is not recognized in this Matlab version.');
+    disp(['The property ''defaultLegendAutoUpdate'' is not recognized in this Matlab version.']);
 end %try
 
 %Set default font:
@@ -128,7 +128,7 @@ end %try
 warning('on','all');
 
 % %Turn off all the warnings.
-% warning('All the warnings will be turned off.')
+% warning('All the warnings will be turned off.');
 % warning('off','all');
 
 %% Access path to the functions.
@@ -401,7 +401,7 @@ end %Loop over the frequency bands.
 
 for bb=1:+1:length(NODE.BPFcfg) %Loop over the frequency bands.
     assert(NODE.fs > (2*NODE.BPFcfg{bb}.f2),...
-           'The sampling rate does not meet the Nyquist criterion for frequency band ',num2str(bb),'.');
+           ['The sampling rate does not meet the Nyquist criterion for frequency band ',num2str(bb),'.']);
 end %Loop over the frequency bands.
 
 %% Check the consistency between the frequency bands and the lenght of the time series.
@@ -411,7 +411,7 @@ timeSeriesLength = DATASET.data.time{DATASET.indTrial}(end) - DATASET.data.time{
 
 for bb=1:+1:length(NODE.BPFcfg) %Loop over the frequency bands.
     assert(timeSeriesLength > (1/NODE.BPFcfg{bb}.f1),...
-           'The time series is shorter than one period of the frequency band ',num2str(bb),'.');
+           ['The time series is shorter than one period of the frequency band ',num2str(bb),'.']);
 end %Loop over the frequency bands.
 
 %% Compute the referencing montage.
@@ -787,7 +787,7 @@ end %Loop over the events.
 NODE.results.Ncluster = numel(unique(NODE.results.idEvents));   
 
 %Compute the resulting number of detected events.
-assert(sum(NODE.results.Nec)==length(NODE.results.idEvents),'Inconsistency detected while computing the number of detected events.');
+assert(sum(NODE.results.Nec)==length(NODE.results.idEvents),['Inconsistency detected while computing the number of detected events.']);
 NODE.results.Nevent = sum(NODE.results.Nec);
 
 %---
@@ -863,7 +863,7 @@ save([OUTPUT.path, OUTPUT.fileName_chgroup],...
      %'NODE','-v7.3'); %Structure containing the information of the events.
 %
 % if exist([OUTPUT.path, OUTPUT.fileName_chgroup, '.mat'],'file')
-%     warning('MATLAB:test_node','The output .mat file already exists. File not saved!')
+%     warning('MATLAB:test_node',['The output .mat file already exists. File not saved!']);
 % else
 %     %For variables larger than 2GB use MAT-file version 7.3 or later.
 %     save([OUTPUT.path, OUTPUT.fileName_chgroup],...
@@ -872,7 +872,7 @@ save([OUTPUT.path, OUTPUT.fileName_chgroup],...
 % end %if exist([OUTPUT.path, OUTPUT.fileName_chgroup, '.mat'],'file')
 
 %Check the contents of the .mat file using the whos function.
-%disp(['Contents of:',sprintf('\n'),ofile])
+%disp(['Contents of:',sprintf('\n'),ofile]);
 %whos('-file',ofile)
 
 %Get the info of the ".mat" file.
@@ -930,7 +930,7 @@ try
     NODE.node = NODE.node.NODE;
 catch err
     %Display a message.
-    disp(err.message);
+    disp([err.message]);
 end %try
 
 %% Extract some relevant parameters.   
@@ -1108,7 +1108,7 @@ copyfile(strcat(mfilename('fullpath'),'.m'), cfgfile);
 %
 % if exist(cfgfile,'file')
 %     warning('MATLAB:test_node',...
-%             'The .cfg file already exists for the current script. File not saved!')
+%             ['The .cfg file already exists for the current script. File not saved!']);
 % else
 %     copyfile(strcat(mfilename('fullpath'),'.m'), cfgfile);
 % end %if exist(cfgfile,'file')
