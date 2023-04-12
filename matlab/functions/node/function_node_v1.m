@@ -277,8 +277,8 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
     %---
     
     %Reset the variables from the previous chunk and initialize the dimensions.
-    %NOTE: This initialization ensures the anomalyPos variable has the proper
-    %dimensions even in the case some frequency bands were not processed 
+    %NOTE: This initialization ensures that the anomalyPos variable has the
+    %proper dimensions even in the case some frequency bands were not processed 
     %because they fail to satisfy the Nyquist criterion.
     anomalyPos(1:args.Nchannels,1:NfreqBands,1:Nthresholds) = {[]};
     %
