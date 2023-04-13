@@ -541,9 +541,11 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
                          %Update the label of the event (i.e. merged anomalies).
                          label(bb2) = 1; %Logical label corresponding the co-ocurrent anomaly in the frequency band bb2.
                          %
-                         %Clear the anomaly(ies) of the next frequency band co-occurring 
-                         %with the anomaly of the current frequency band, since they
-                         %were merged in a single event.
+                         %Clear the anomaly(ies) of the frequency band bb2 co-occurring 
+                         %with the anomaly of the frequency band bb1, since they
+                         %were merged in a single event. This prevents anomaly(ies)
+                         %processed in the inner loop bb2 from being considered again
+                         %in the outer loop bb1.
                          anomalyPos{cc,bb2,th}(indAnomaly) = [];
                          %
                      end %if sum(indAnomaly) >= 1                     
