@@ -742,7 +742,7 @@ p.addParameter('windowLength', defaultWindowLength, validWindowLength);
 %
 validAmpEnv = @(x) islogical(x);
 %Flags to compute the amplitude envelope in each frequency band.
-defaultAmpEnv = false(1, length(varargin{1,1}{:}.BPFcfg));
+defaultAmpEnv = false(size(varargin{1,1}{:}.BPFcfg));
 p.addParameter('ampEnv', defaultAmpEnv, validAmpEnv);
 %
 validBPFcfg = @(x) (isstruct(x) || iscell(x));
@@ -752,10 +752,6 @@ p.addParameter('BPFcfg', defaultBPFcfg, validBPFcfg);
 validLFDR = @(x) (isstruct(x));
 defaultLFDR = struct(); %The fields of this structure are checked below and inside the LFDR function (function_LFDR_v1.m).
 p.addParameter('LFDR', defaultLFDR, validLFDR);
-%
-validPolyDetFunction = validString;
-defaultPolyDetFunction = 'function_polyfit_v1';
-p.addParameter('polyDetFunction', defaultPolyDetFunction, validPolyDetFunction);
 %
 %NOTE: We desided not to use the positional argument format.
 %For instance:
