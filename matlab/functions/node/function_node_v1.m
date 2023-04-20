@@ -38,6 +38,16 @@
 %of polymorphic interictal events in drug-resistant focal epilepsy, Epilepsia (submitted 2023).
 %Preprint freely available at DOI: https://doi.org/10.1101/2023.04.05.23288085
 
+%% Changes from previous versions.
+
+%None.
+
+%% How to test this script.
+
+%Find the instructions in the link:
+%
+%https://github.com/damian-dellavale/node/
+
 %% Tree of dependencies.
 
 %function_node_v1.m
@@ -48,16 +58,6 @@
 % function_zscore_v1.m
 %
 % function_LFDR_v1.m
-
-%% Changes from previous versions.
-
-%None.
-
-%% How to test this script.
-
-%Find the instructions in the link:
-%
-%https://github.com/damian-dellavale/node/
 
 %% Main function.
 

@@ -9,7 +9,7 @@ preprocessing
 applying the montage to the elec structure
 [Warning: copying input chantype to montage] 
 [Warning: copying input chanunit to montage] 
-the call to "ft_preprocessing" took 2 seconds
+the call to "ft_preprocessing" took 1 seconds
 the call to "ft_selectdata" took 0 seconds
 preprocessing
 applying the montage to the elec structure
@@ -47,6 +47,8 @@ applying the montage to the elec structure
 [Warning: copying input chanunit to montage] 
 the call to "ft_preprocessing" took 1 seconds
 Processing channel RHH1-RHH2; 1 out of 7.
+Starting parallel pool (parpool) using the 'local' profile ...
+Connected to the parallel pool (number of workers: 24).
 Detection on chunk 1/1
 Processing local FDR 1 out of 2.
 Processing local FDR 2 out of 2.

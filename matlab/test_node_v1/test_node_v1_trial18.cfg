@@ -47,6 +47,10 @@
 %Link to the Fieldtrip tutorial using the iEEG dataset:
 %https://www.fieldtriptoolbox.org/tutorial/human_ecog/
 
+%% Changes from previous versions.
+
+%None.
+
 %% Tree of dependencies.
 
 %test_node_v1.m
@@ -60,10 +64,6 @@
 %  function_LFDR_v1.m
 %
 % function_saveFig_v1.m
-
-%% Changes from previous versions.
-
-%None.
 
 %% Settings for the Parallel Computing Toolbox.
 
