@@ -10,7 +10,7 @@ while controlling for the proportion of false positives.
 
 # Testing the NODE algorithm
 
-1. Download the ```node``` folder in your computer (use the green button ```Code``` above).
+1. Download/clone the ```node``` repository in your computer (use the green button ```Code``` above).
 2. Download the header ```SubjectUCI29_hdr.mat``` and the data ```SubjectUCI29_data.mat``` files (see the zenodo link below), and copy them into the folder ```node/data/```.
 3. Run the ```test_node_v1.m``` script. 
 4. Find the results in the folder ```node/matlab/test_node_v1/```.
