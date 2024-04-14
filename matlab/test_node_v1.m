@@ -1,11 +1,9 @@
 %%
 
-% Departamento de Fisica Medica (DFM)
-% Centro Atomico Bariloche, Comision Nacional de Energia Atomica (CNEA)
-% Instituto Balseiro, Universidad Nacional de Cuyo
-% Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)
-% R8402AGP San Carlos de Bariloche, Rio Negro, Argentina
-% https://fisica.cab.cnea.gov.ar/fisicamedica/sites-ddellavale/
+%Departamento de Física Médica (DFM) - Instituto de Nanociencia y Nanotecnología (INN)
+%Centro Atómico Bariloche (CAB), R8402AGP, San Carlos de Bariloche, Río Negro, Argentina
+%Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)
+%https://inn-cnea.conicet.gov.ar/
 
 % Dynamical Brain Mapping Group (DYNAMAP)
 % Institut de Neurosciences des Systemes (INS)
@@ -15,7 +13,7 @@
 
 % Authors: Damian Dellavale (dellavale@cab.cnea.gov.ar,
 %                            dellavaledamian@gmail.com,
-%                            hector.dellavale-clara@univ-amu.fr).
+%                            https://github.com/damian-dellavale.github.io).
 
 % Project: Nested Outlier Detection (NODE) algorithm.
 
