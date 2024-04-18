@@ -1,8 +1,10 @@
 %%
 
-%Departamento de Física Médica (DFM) - Instituto de Nanociencia y Nanotecnología (INN)
-%Centro Atómico Bariloche (CAB), R8402AGP, San Carlos de Bariloche, Río Negro, Argentina
 %Consejo Nacional de Investigaciones Científicas y Técnicas (CONICET)
+%Departamento de Física Médica (DFM)
+%Instituto de Nanociencia y Nanotecnología (INN)
+%Centro Atómico Bariloche (CAB)
+%R8402AGP, San Carlos de Bariloche, Río Negro, Argentina
 %https://inn-cnea.conicet.gov.ar/
 
 % Dynamical Brain Mapping Group (DYNAMAP)
