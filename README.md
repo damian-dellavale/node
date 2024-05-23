@@ -26,7 +26,7 @@ Dellavale D., Bonini F., Pizzo F., et al. Spontaneous fast-ultradian dynamics of
 DOI: [10.1111/epi.17655](https://doi.org/10.1111/epi.17655)\
 medRxiv DOI: [10.1101/2023.04.05.23288085](https://doi.org/10.1101/2023.04.05.23288085)\
 HAL open science: [hal-04148849](https://hal.science/hal-04148849)\
-Researchgate: [Paper including the discussion with the reviewers](https://www.researchgate.net/publication/370870703_Spontaneous_fast-ultradian_dynamics_of_polymorphic_interictal_events_in_drug-resistant_focal_epilepsy)
+Researchgate: [Preprint including the discussion with the reviewers](https://www.researchgate.net/publication/370870703_Spontaneous_fast-ultradian_dynamics_of_polymorphic_interictal_events_in_drug-resistant_focal_epilepsy)
 
 - Paper describing the example iEEG dataset:\
 Stolk A., Griffin S., van der Meij R. et al. Integrated analysis of anatomical
