@@ -24,7 +24,9 @@ we elaborated on top of these scripts to study the fast-ultradian dynamics of th
 - Paper describing the NODE algorithm:\
 Dellavale D., Bonini F., Pizzo F., et al. Spontaneous fast-ultradian dynamics of polymorphic interictal events in drug-resistant focal epilepsy, Epilepsia. 2023; 00:1-17.\
 DOI: [10.1111/epi.17655](https://doi.org/10.1111/epi.17655)\
-Preprint freely available at DOI: [10.1101/2023.04.05.23288085](https://doi.org/10.1101/2023.04.05.23288085)
+medRxiv DOI: [10.1101/2023.04.05.23288085](https://doi.org/10.1101/2023.04.05.23288085)\
+HAL open science: [hal-04148849](https://hal.science/hal-04148849)\
+Researchgate: [Paper including the discussion with the reviewers](https://www.researchgate.net/publication/370870703_Spontaneous_fast-ultradian_dynamics_of_polymorphic_interictal_events_in_drug-resistant_focal_epilepsy)
 
 - Paper describing the example iEEG dataset:\
 Stolk A., Griffin S., van der Meij R. et al. Integrated analysis of anatomical
