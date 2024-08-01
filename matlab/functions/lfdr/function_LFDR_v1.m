@@ -276,7 +276,7 @@ else
     empiricalDistFittingInt = args.empiricalDistRange;
 end %if strcmpi(args.empiricalDistRangeMethod, 'auto')
 
-%Memory pre-allocation for speed up the loop.         
+%Memory pre-allocation to speed up the loop.         
 f0_emp_ = NaN(size(empiricalDistFittingInt,dimRows),length(f));
 Erms = NaN(1,size(empiricalDistFittingInt,dimRows));  
 for ii=1:+1:size(empiricalDistFittingInt,1) %Loop over the fitting intervals.

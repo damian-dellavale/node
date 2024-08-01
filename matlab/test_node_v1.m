@@ -280,7 +280,7 @@ LFDR.theoreticalDistParam = {'mu', 0, 'sigma', 1};
 LFDR.empiricalDistRange = []; %Use the default value.
 %
 LFDR.empiricalDistRangeMethod = 'auto';
-LFDR.empiricalDistNintervals = 100;
+LFDR.empiricalDistNfitInt = 100;
 %
 LFDR.empiricalDistFunction = 'fitdist';
 LFDR.empiricalDistName = 'Normal';

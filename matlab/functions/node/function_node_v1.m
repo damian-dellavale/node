@@ -241,7 +241,7 @@ allEventSignal      = cell([args.Nchannels, Nthresholds]);
 allEventBPFsignal   = cell([args.Nchannels, Nthresholds]);
 allEventT           = cell([args.Nchannels, Nthresholds]);
 %
-%Memory pre-allocation for speed up the loop.
+%Memory pre-allocation to speed up the loop.
 %
 for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
         
@@ -282,7 +282,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
     %because they fail to satisfy the Nyquist criterion.
     anomalyPos(1:args.Nchannels,1:NfreqBands,1:Nthresholds) = {[]};
     %
-    %Memory pre-allocation for speed up the loop.
+    %Memory pre-allocation to speed up the loop.
     chunk_bpf = NaN(args.Nchannels,size(chunk,dimSamples),NfreqBands);
     %ampThreshold_high = NaN(args.Nchannels,NfreqBands,Nthresholds);
     %ampThreshold_low = NaN(args.Nchannels,NfreqBands,Nthresholds);
@@ -501,7 +501,7 @@ for chk=1:+1:length(chunkStart_samples) %Loop over the chunks.
      sortedEventPos   = {};
      sortedEventLabel = {};
      %
-     %Memory pre-allocation for speed up the loop.
+     %Memory pre-allocation to speed up the loop.
      %
      for th=1:+1:Nthresholds %Loop over the LFDR threshold values.
          
